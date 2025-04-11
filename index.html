@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Creating Header section for navbar -->
+    <header class="header">
+        <a href="#home" class="mainName">Abdullah Md.<span class="name"> Ozaer</span></a>
+        <i class='bx bx-menu' id="menu"></i>
+        <nav class="navBar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- Landing page home -->
+    <section class="home" id="home">
+        <div class="home-contain">
+            <div class="imgProfile">
+                <img src="./images/profile.jpg" alt="Ozaer" />
+            </div>
+            <div class="info1">
+                <h1>Hi, It's <span class="name">Ozaer</span></h1>
+                <h3>I'm a <span class="name">Web Developer</span></h3>
+                <p>
+                    Crafting clean, responsive, and user-friendly websites. Bringing ideas to life with HTML, CSS, and
+                    JavaScript.
+                </p>
+                <div class="social-icon">
+                    <a
+                        href="https://www.linkedin.com/in/abdullah-md-ozaer-358665345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                            class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://www.facebook.com/Graviton.ftn"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="https://www.instagram.com/your.senpae/profilecard/?igsh=MW5qeTVwMjB0MnJhag=="><i
+                            class='bx bxl-instagram-alt'></i></a>
+                    <a href="#"><i class='bx bxl-telegram'></i></a>
+                </div>
+                <div class="btn">
+                    <button class="book"><a href="https://www.facebook.com/Graviton.ftn">Book Now</a></button>
+                    <button class="cntc"><a href="https://www.facebook.com/Graviton.ftn">Contact</a></button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 2nd page About section -->
+    <section class="about" id="about">
+        <div class="about-containt">
+            <h1>About <span class="name">Me</span></h1>
+            <p>
+                I'm a self-taught web developer learning HTML, CSS, and JavaScript. I love building responsive websites
+                and constantly practice to improve my skills and grow in the field.
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="./images/profile.jpg" alt="Ozaer" />
+        </div>
+    </section>
+    <!-- 3rd page contact section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+
+            <form action="#" method="POST">
+                <h1><span class="name">Contact</span> Me</h1>
+                <div class="input-grp1">
+                    <div class="inputBox">
+                        <input type="text" name="name" id="name" placeholder="Full Name" required />
+                        <input type="email" name="email" id="email" placeholder="Email" required />
+                    </div>
+                    <div class="inputBox">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
+                        <input type="text" name="subject" id="subject" placeholder="Subject" />
+                    </div>
+                </div>
+                <div class="input-grp2">
+                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Your message"
+                        required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="social-icon">
+            <a
+                href="https://www.linkedin.com/in/abdullah-md-ozaer-358665345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                    class='bx bxl-linkedin-square'></i></a>
+            <a href="https://www.facebook.com/Graviton.ftn"><i class='bx bxl-facebook-square'></i></a>
+            <a href="https://www.instagram.com/your.senpae/profilecard/?igsh=MW5qeTVwMjB0MnJhag=="><i
+                    class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-telegram'></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <span class="time">Today is <span class="now" id="now"></span></span>
+        <p class="copyright">
+            @MD Ozaer | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
